@@ -145,11 +145,6 @@ function _commons_core_header_login_block_view() {
     return NULL;
   }
   
-  // No login needed if we're on the login page
-  if (arg(0) == 'user') {
-    return NULL;
-  }
-  
   // Determine if we're on the front page
   if (drupal_is_front_page()) {
     // Only provide a link
